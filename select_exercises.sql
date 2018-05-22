@@ -1,11 +1,11 @@
 USE codeup_test_db;
 
-SELECT name FROM albums WHERE artist = 'Pink Floyd';
-SELECT release_date FROM albums WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
-SELECT genre FROM albums WHERE name = 'Nevermind';
-SELECT * FROM albums WHERE release_date BETWEEN 1990 AND 1999;
-SELECT * FROM albums WHERE sales < 2000;
-SELECT * FROM albums WHERE genre LIKE '%rock%';
+SELECT name AS 'PF Albums' FROM albums WHERE artist = 'Pink Floyd';
+SELECT release_date AS 'Sgt. P release date' FROM albums WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
+SELECT genre AS 'Nevermind genre' FROM albums WHERE name = 'Nevermind';
+SELECT * AS '90''s albums' FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+SELECT * AS 'less than 2000 sales' FROM albums WHERE sales < 2000;
+SELECT * AS 'rock albums' FROM albums WHERE genre LIKE '%rock%';
 
 
 
