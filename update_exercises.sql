@@ -1,4 +1,22 @@
 
+USE codeup_test_db;
+
+SELECT * AS 'all albums' from albums;
+UPDATE albums
+SET sales = sales * 10
+
+SELECT * AS 'albums before 1980' FROM albums WHERE release_date < 1980;
+UPDATE albums
+SET release_date = release_date - 80
+WHERE release_date < 1980;
+
+SELECT * AS 'MJ albums' FROM albums WHERE artist = 'Michael Jackson';
+UPDATE albums
+SET artist = 'Peter Jackson'
+WHERE artist = 'Michael Jackson';
+
+
+
 
 
 
