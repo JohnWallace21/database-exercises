@@ -10,6 +10,7 @@ release_date YEAR(4),
 sales FLOAT(5,2) ,
 genre VARCHAR(50),
 PRIMARY KEY (id)
+FOREIGN KEY
 );
 
 
